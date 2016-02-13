@@ -132,6 +132,59 @@
                         <p>This isn't a point we roll back or forward to yet, it's not been committed to the repository.
                             This means that git will only look after the files you "add", all others will be ignored.</p>
                     </section>
+                    <section>
+                        <h2>It's time to commit</h2>
+                        <p>Run "git commit"</p>
+                        <p>Your default text editor (or vi in Windows for some reason) should pop up with a list of changes
+                        write a message describing what you've done then save and exit. In vi, hit "i" before typing and then
+                            "esc", ":wq" to save and exit.
+                        </p>
+                    </section>
+                    <section>
+                        <img src="images/commit_master.jpg"/>
+                    </section>
+                    <section>
+                        <p>You can see your history in git by typing git log</p>
+                        <img src="images/git_log.PNG"/>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Branches</h1>
+                        <img src="http://imgs.xkcd.com/comics/git_commit.png"/>
+                    </section>
+                    <section>
+                        <p>Branches in git and how you manage them start to slip into the realms of workflows,
+                        we'll cover the basics, but won't go too far down the workflow rabbit hole.
+                        </p>
+                        <p>Imagine you had a program and wanted to implement a new feature. You might not want
+                        to alter your "master" code as it's being used in production. So we can create a branch,
+                            make modifications there and then merge it back in.
+                        </p>
+                    </section>
+                    <section>
+                        <h2>My First Branch</h2>
+                        <p>Go back to your command prompt and type "git branch experiment_1"</p>
+                        <p>Then type "git branch"</p>
+                        <img src="images/git_branch.PNG"/>
+                    </section>
+                    <section>
+                        <img src="images/wrong_branch.PNG"/>
+                    </section>
+                    <section>
+                        <p>We've created the branch but we're not working in it, so lets check it out</p>
+                        <p>Type "git checkout experiment_1"</p>
+                        <p>Then type "git branch" again</p>
+                        <img src="images/git_checkout.PNG"/>
+                    </section>
+                    <section>
+                        <p>An exercise for you</p>
+                        <ol>
+                            <li>Edit your code in the new branch</li>
+                            <li>Add and commit the changes</li>
+                        </ol>
+                    </section>
+
                 </section>
 
             </div>
