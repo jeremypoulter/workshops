@@ -184,7 +184,45 @@
                             <li>Add and commit the changes</li>
                         </ol>
                     </section>
-
+                    <section>
+                        <img src="images/branched_changes.PNG"/>
+                        <p>Check "git log" to make sure your commit message is there and then change back to the
+                        "master" branch with "git checkout master"</p>
+                    </section>
+                    <section>
+                        <p>You should now find your changes have vanished</p>
+                        <img src="images/branched_changes_master.PNG"/>
+                    </section>
+                    <section>
+                        <h2>If I'm finished with that branch, how do I combine it back?</h2>
+                    </section>
+                    <section>
+                        <img src="images/meerkat_simples.jpg"/>
+                    </section>
+                    <section>
+                        <p>In your command prompt just type "git merge &lt;branch name&gt;"</p>
+                        <img src="images/git_merge.PNG"/>
+                    </section>
+                    <section>
+                        <p>Git merge plays back the diffs stored in git from the point you branched and tries to apply
+                        them to the current branch. If it can't do that, it stops, puts a marker in the file it's stuck
+                        on and then asks for a human to sort it out for it. This is normally quite rare.</p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Working with Remote repositories</h1>
+                    </section>
+                    <section>
+                        <p>Remember when we talked about git projects being distributed? Well, the first thing we do
+                        is clone the entire repository from the remote location. You can, for example, pull down this
+                        presentation</p>
+                        <code>git clone https://github.com/reading-hackspace/workshops.git</code>
+                        <p>Or you can pull over ssh</p>
+                        <code>git clone git@github.com:reading-hackspace/workshops.git</code>
+                        <p>Make sure you run that in the directory you want the repo cloned too. It will appear as a
+                        folder called "workshops". Investigate this repository and have a read through the logs</p>
+                    </section>
                 </section>
 
             </div>
